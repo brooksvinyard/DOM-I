@@ -40,10 +40,40 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//nav
+const navQuery = document.querySelectorAll('header nav a');
 
+navQuery[0].textContent = siteContent.nav["nav-item-1"];
+navQuery[1].textContent = siteContent.nav["nav-item-2"];
+navQuery[2].textContent = siteContent.nav["nav-item-3"];
+navQuery[3].textContent = siteContent.nav["nav-item-4"];
+navQuery[4].textContent = siteContent.nav["nav-item-5"];
+navQuery[5].textContent = siteContent.nav["nav-item-6"];
+
+
+//CTA
+document.querySelector('.cta-text h1').textContent = siteContent.cta.h1;
+document.querySelector('.cta-text button').textContent = siteContent.cta.button;
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.src = siteContent.cta["img-src"];
 
-console.log(document.getElementById("cta-img"));
-console.log(siteContent.cta["img-src"]);
+//Main Content
+document.querySelectorAll('.top-content .text-content h4')[0].textContent = siteContent["main-content"]["features-h4"];
+document.querySelectorAll('.top-content .text-content p')[0].textContent = siteContent["main-content"]["features-content"];
+
+document.querySelectorAll('.top-content .text-content h4')[1].textContent = siteContent["main-content"]["about-h4"];
+document.querySelectorAll('.top-content .text-content p')[1].textContent = siteContent["main-content"]["about-content"];
+
+document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
+
+document.querySelectorAll('.bottom-content .text-content h4')[0].textContent = siteContent["main-content"]["services-h4"];
+document.querySelectorAll('.bottom-content .text-content p')[0].textContent = siteContent["main-content"]["services-content"];
+document.querySelectorAll('.bottom-content .text-content h4')[1].textContent = siteContent["main-content"]["product-h4"];
+document.querySelectorAll('.bottom-content .text-content p')[1].textContent = siteContent["main-content"]["product-content"];
+document.querySelectorAll('.bottom-content .text-content h4')[2].textContent = siteContent["main-content"]["vision-h4"];
+document.querySelectorAll('.bottom-content .text-content p')[2].textContent = siteContent["main-content"]["vision-content"];
+
+//Contact
+
+//Footer
