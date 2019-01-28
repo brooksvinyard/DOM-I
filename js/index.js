@@ -49,6 +49,18 @@ navQuery[2].textContent = siteContent.nav["nav-item-3"];
 navQuery[3].textContent = siteContent.nav["nav-item-4"];
 navQuery[4].textContent = siteContent.nav["nav-item-5"];
 navQuery[5].textContent = siteContent.nav["nav-item-6"];
+navQuery.forEach( element => {element.style.color = "green"});
+
+// adding two new menus to the nav bar
+const navMenu = document.querySelectorAll('header nav');
+
+const newMenu1 = document.createElement("a");
+newMenu1.textContent = "Blog";  
+navMenu[0].appendChild(newMenu1);
+
+const newMenu2 = document.createElement("a");
+newMenu2.textContent = "HOME";  
+navMenu[0].prepend(newMenu2);
 
 
 //CTA
