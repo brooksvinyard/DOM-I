@@ -82,3 +82,5 @@ contactQuery[1].textContent = siteContent.contact["phone"];
 contactQuery[2].textContent = siteContent.contact["email"];
 
 //Footer
+document.querySelector('footer p').textContent = siteContent.footer.copyright;
+
