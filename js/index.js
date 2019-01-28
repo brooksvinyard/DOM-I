@@ -75,5 +75,10 @@ document.querySelectorAll('.bottom-content .text-content h4')[2].textContent = s
 document.querySelectorAll('.bottom-content .text-content p')[2].textContent = siteContent["main-content"]["vision-content"];
 
 //Contact
+document.querySelector('.contact h4').textContent = siteContent.contact["contact-h4"];
+const contactQuery = document.querySelectorAll('.contact p');
+contactQuery[0].textContent = siteContent.contact["address"];
+contactQuery[1].textContent = siteContent.contact["phone"];
+contactQuery[2].textContent = siteContent.contact["email"];
 
 //Footer
